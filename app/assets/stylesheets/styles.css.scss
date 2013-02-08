@@ -1,5 +1,5 @@
-$baseFontFamily: Oxygen;
-@import url(http://fonts.googleapis.com/css?family=Oxygen);
+$baseFontFamily: Lato;
+@import url(http://fonts.googleapis.com/css?family=Lato);
 
 $btnPrimaryBackground: green;
 $navbarBackgroundHighlight: white;
@@ -24,4 +24,8 @@ body {
 	a {
 		color: $gray;
 	}
+}
+
+.brand {
+	text-transform: uppercase;
 }
