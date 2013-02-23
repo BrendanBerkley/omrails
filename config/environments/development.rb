@@ -37,4 +37,9 @@ Omrails::Application.configure do
 
   # Devise setup
   config.action_mailer.default_url_options = { :host => 'localhost:3000'}
+
+  # Paperclip to Imagemagick
+  Paperclip.options[:command_path] = "C:/PROGRA~1/IMAGEM~1.0-Q"
+  #Paperclip.options[:command_path] = "C:/ImageMagick-6.8.3-Q16/"
+  Paperclip.options[:swallow_stderr] = false 
 end
