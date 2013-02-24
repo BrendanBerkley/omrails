@@ -29,3 +29,23 @@ body {
 .brand {
 	text-transform: uppercase;
 }
+
+/* Required for jQuery Masonry */
+.box {
+	margin: 5px;
+	padding: 5px;
+	font-size: 11px;
+	line-height: 1.4em;
+	float: left;
+	box-shadow: 1px 1px 5px #444444;
+	width: 214px;
+}
+
+.box img {
+	display: block;
+	width: 100%;
+}
+
+.description {
+	margin: 10px 0 5px;
+}
