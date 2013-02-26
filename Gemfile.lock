@@ -50,6 +50,8 @@ GEM
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    faker (1.1.2)
+      i18n (~> 0.5)
     hike (1.2.1)
     i18n (0.6.1)
     journey (1.0.4)
@@ -124,6 +126,7 @@ GEM
       multi_json (~> 1.0, >= 1.0.2)
     warden (1.2.1)
       rack (>= 1.0)
+    will_paginate (3.0.4)
 
 PLATFORMS
   x86-mingw32
@@ -132,6 +135,7 @@ DEPENDENCIES
   bootstrap-sass (~> 2.2.2.0)
   coffee-rails (~> 3.2.1)
   devise
+  faker
   jquery-rails
   paperclip (~> 3.0)
   pg
@@ -140,3 +144,4 @@ DEPENDENCIES
   simple_form
   sqlite3
   uglifier (>= 1.0.3)
+  will_paginate (~> 3.0)
