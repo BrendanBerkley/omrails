@@ -1,0 +1,24 @@
+// Place all the styles related to the Pins controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.single-pin {
+    margin-bottom: 20px;
+    min-height: 20px;
+    padding: 19px;
+
+	box-shadow: inset 0 0 5px #555;
+	background: transparent url('paper_fibers.png');
+	border-radius: 0;
+}
+
+.single-pin img {
+	display: block;
+	width: 95%;
+	margin: 5px auto 0;
+}
+
+.single-pin p {
+	margin: 10px 2.5% 5px;
+	color: black;
+}

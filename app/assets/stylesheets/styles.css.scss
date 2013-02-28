@@ -1,21 +1,44 @@
+@font-face {
+    font: {
+       family: 'LeagueGothicRegular';
+       weight: 'normal';
+       style: 'normal';
+    }
+    src: asset-url('League_Gothic-webfont.eot', font);
+    src: asset-url('League_Gothic-webfont.eot', font) format('embedded-opentype'),
+         asset-url('League_Gothic-webfont.woff', font) format('woff'),
+         asset-url('League_Gothic-webfont.ttf', font) format('truetype'),
+         asset-url('League_Gothic-webfont.svg#JunctionRegular', font) format('svg')
+}
+
 $baseFontFamily: Lato;
 @import url(http://fonts.googleapis.com/css?family=Lato);
 
-$btnPrimaryBackground: green;
-$navbarBackgroundHighlight: white;
-$navbarBackground: white;
+$headingsFontFamily: LeagueGothicRegular;
+$headingsFontWeight: normal;
+
+$btnPrimaryBackground: black;
+
 
 @import 'bootstrap';
 
 @import 'bootstrap-responsive';
 
 body {
+	background: transparent url('black_twill.png');
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-transform: uppercase;
+}
+
+div#main {
 	padding-top: 60px;
 }
 
 .navbar-inner {
 	@include box-shadow(none !important);
-	border: 0;
+	
 }
 
 .footer {
@@ -28,6 +51,19 @@ body {
 
 .brand {
 	text-transform: uppercase;
+	font-family: LeagueGothicRegular;
+	font-size: 2em!important;
+	letter-spacing: 1px;
+}
+
+.hero-unit {
+	box-shadow: 0 0 5px #222;
+	background: transparent url('paper_fibers.png');
+}
+
+.hero-unit p {
+	line-height: 1.4em;
+	margin: 5px auto 15px;
 }
 
 /* Required for jQuery Masonry */
@@ -37,15 +73,53 @@ body {
 	font-size: 11px;
 	line-height: 1.4em;
 	float: left;
-	box-shadow: 1px 1px 5px #444444;
+	box-shadow: inset 0 0 5px #555;
 	width: 214px;
+	background: transparent url('paper_fibers.png');
+	/*background: transparent url('otis_redding_colored.png');*/
+	border-radius: 0;
 }
 
 .box img {
 	display: block;
-	width: 100%;
+	width: 95%;
+	margin: 5px auto 0;
+	//box-shadow: 0 0 5px #444;
 }
 
-.description {
-	margin: 10px 0 5px;
+.box p {
+	margin: 10px 2.5% 5px;
+	color: black;
+}
+
+
+/* will_paginate CSS */
+
+.pagination {
+	display: block;
+	text-align: center;
+	position: relative;
+	margin: 40px auto;
+	font-size: 1.3em;
+}
+
+.pagination a {
+	background-color: #B78C2E;
+	padding: 7px 13px;
+	box-shadow: inset 0 0 3px #222;
+	color: #000;
+}
+
+.pagination a:hover {
+	background-color: #553;
+	color: #fff;
+	text-decoration: none;
+}
+
+.pagination .previous_page, .pagination .next_page, .pagination .current {
+	background-color: transparent;
+	border: 0;
+	box-shadow:none;
+	color: #000;
+	padding: 7px 13px;
 }
