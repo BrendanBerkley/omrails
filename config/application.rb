@@ -62,6 +62,6 @@ module Omrails
     # Devise-related, if deploying Rails 3.1 to Heroku (we are).
     config.assets.initialize_on_precompile = false
 
-    config.assets.paths << "#{Rails.root}/app/assets/fonts"
+    config.assets.paths << "#{Rails.root}/app/assets/font "
   end
 end
